@@ -1,0 +1,2407 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/24</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jul 11 20:49:28 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>53 seconds (53015 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.OrderConfirmPageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.OrderConfirmPageTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.OrderConfirmPageTest.setup(OrderConfirmPageTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace266906347", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace266906347'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.OrderConfirmPageTest.setup(OrderConfirmPageTest.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>com.nocommercedemo.Testcases.OrderConfirmPageTest@17f62e33</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.MyAcoountPageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.MyAcoountPageTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.MyAcoountPageTest.setup(MyAcoountPageTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace920914400", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace920914400'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.MyAcoountPageTest.setup(MyAcoountPageTest.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>com.nocommercedemo.Testcases.MyAcoountPageTest@248e319b</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.HomePageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.HomePageTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.HomePageTest.setup(HomePageTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace384752294", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace384752294'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.HomePageTest.setup(HomePageTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.nocommercedemo.Testcases.HomePageTest@4b741d6d</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.CheckoutShippingMethodPageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.CheckoutShippingMethodPageTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.CheckoutShippingMethodPageTest.setup(CheckoutShippingMethodPageTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1821330375", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1821330375'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.CheckoutShippingMethodPageTest.setup(CheckoutShippingMethodPageTest.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>com.nocommercedemo.Testcases.CheckoutShippingMethodPageTest@25ce9dc4</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.WishlistPageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.WishlistPageTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.WishlistPageTest.setup(WishlistPageTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace483135526", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace483135526'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.WishlistPageTest.setup(WishlistPageTest.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>com.nocommercedemo.Testcases.WishlistPageTest@74ea2410</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.RegisterPageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.RegisterPageTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.RegisterPageTest.setup(RegisterPageTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1248310508", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1248310508'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.RegisterPageTest.setup(RegisterPageTest.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.nocommercedemo.Testcases.RegisterPageTest@8f2ef19</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.CheckoutPaymentmethodPageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.CheckoutPaymentmethodPageTest<br>Parameters: Chrome</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b58682be318c354356dffd8108d45028, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55055}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b58682be318c354356dffd8108d45028
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1034)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:102)
+	at com.nocommercedemo.Testcases.CheckoutPaymentmethodPageTest.setup(CheckoutPaymentmethodPageTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1444912530", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1444912530'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b58682be318c354356dffd8108d45028, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55055}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b58682be318c354356dffd8108d45028
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1034)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:102)
+	at com.nocommercedemo.Testcases.CheckoutPaymentmethodPageTest.setup(CheckoutPaymentmethodPageTest.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>com.nocommercedemo.Testcases.CheckoutPaymentmethodPageTest@69e153c5</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.DeskTopPageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.DeskTopPageTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.DeskTopPageTest.setup(DeskTopPageTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1548081008", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1548081008'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.DeskTopPageTest.setup(DeskTopPageTest.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>9</td>
+<td>com.nocommercedemo.Testcases.DeskTopPageTest@2e8c1c9b</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.ComputerPageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.ComputerPageTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.ComputerPageTest.setup(ComputerPageTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2042532331", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2042532331'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.ComputerPageTest.setup(ComputerPageTest.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>4</td>
+<td>com.nocommercedemo.Testcases.ComputerPageTest@173ed316</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.ProductInfoPageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.ProductInfoPageTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.ProductInfoPageTest.setup(ProductInfoPageTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace795275472", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace795275472'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.ProductInfoPageTest.setup(ProductInfoPageTest.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>com.nocommercedemo.Testcases.ProductInfoPageTest@2eae8e6e</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.LoginPageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.LoginPageTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.LoginPageTest.setup(LoginPageTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1206580572", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1206580572'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.LoginPageTest.setup(LoginPageTest.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>com.nocommercedemo.Testcases.LoginPageTest@2af004b</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.CheckoutBillingPageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.CheckoutBillingPageTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.CheckoutBillingPageTest.setup(CheckoutBillingPageTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace728740247", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace728740247'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.CheckoutBillingPageTest.setup(CheckoutBillingPageTest.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>com.nocommercedemo.Testcases.CheckoutBillingPageTest@7674f035</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.CheckoutCardtypemethodpageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.CheckoutCardtypemethodpageTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.CheckoutCardtypemethodpageTest.setup(CheckoutCardtypemethodpageTest.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace974559308", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace974559308'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.CheckoutCardtypemethodpageTest.setup(CheckoutCardtypemethodpageTest.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>2</td>
+<td>com.nocommercedemo.Testcases.CheckoutCardtypemethodpageTest@27406a17</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.ShopingCartPageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.ShopingCartPageTest<br>Parameters: Chrome</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.ShopingCartPageTest.setup(ShopingCartPageTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace26101073", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace26101073'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.ShopingCartPageTest.setup(ShopingCartPageTest.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>com.nocommercedemo.Testcases.ShopingCartPageTest@76b1e9b8</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.CheckoutBillingPageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.CheckoutBillingPageTest</td>
+<td></td>
+<td>-1720711191</td>
+<td>com.nocommercedemo.Testcases.CheckoutBillingPageTest@7674f035</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.ComputerPageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.ComputerPageTest</td>
+<td></td>
+<td>-1720711200</td>
+<td>com.nocommercedemo.Testcases.ComputerPageTest@173ed316</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.ProductInfoPageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.ProductInfoPageTest</td>
+<td></td>
+<td>-1720711181</td>
+<td>com.nocommercedemo.Testcases.ProductInfoPageTest@2eae8e6e</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.ComputerPageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.ComputerPageTest</td>
+<td></td>
+<td>-1720711200</td>
+<td>com.nocommercedemo.Testcases.ComputerPageTest@173ed316</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.OrderConfirmPageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.OrderConfirmPageTest</td>
+<td></td>
+<td>-1720711209</td>
+<td>com.nocommercedemo.Testcases.OrderConfirmPageTest@17f62e33</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.CheckoutCardtypemethodpageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.CheckoutCardtypemethodpageTest</td>
+<td></td>
+<td>-1720711215</td>
+<td>com.nocommercedemo.Testcases.CheckoutCardtypemethodpageTest@27406a17</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.RegisterPageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.RegisterPageTest</td>
+<td></td>
+<td>-1720711187</td>
+<td>com.nocommercedemo.Testcases.RegisterPageTest@8f2ef19</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.RegisterPageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.RegisterPageTest</td>
+<td></td>
+<td>-1720711183</td>
+<td>com.nocommercedemo.Testcases.RegisterPageTest@8f2ef19</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.ComputerPageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.ComputerPageTest</td>
+<td></td>
+<td>-1720711200</td>
+<td>com.nocommercedemo.Testcases.ComputerPageTest@173ed316</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.CheckoutPaymentmethodPageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.CheckoutPaymentmethodPageTest</td>
+<td></td>
+<td>-1720711195</td>
+<td>com.nocommercedemo.Testcases.CheckoutPaymentmethodPageTest@69e153c5</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.ShopingCartPageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.ShopingCartPageTest</td>
+<td></td>
+<td>-1720711213</td>
+<td>com.nocommercedemo.Testcases.ShopingCartPageTest@76b1e9b8</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.HomePageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.HomePageTest</td>
+<td></td>
+<td>-1720711179</td>
+<td>com.nocommercedemo.Testcases.HomePageTest@4b741d6d</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.HomePageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.HomePageTest</td>
+<td></td>
+<td>-1720711179</td>
+<td>com.nocommercedemo.Testcases.HomePageTest@4b741d6d</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.WishlistPageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.WishlistPageTest</td>
+<td></td>
+<td>-1720711207</td>
+<td>com.nocommercedemo.Testcases.WishlistPageTest@74ea2410</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.ShopingCartPageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.ShopingCartPageTest</td>
+<td></td>
+<td>-1720711213</td>
+<td>com.nocommercedemo.Testcases.ShopingCartPageTest@76b1e9b8</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.CheckoutBillingPageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.CheckoutBillingPageTest</td>
+<td></td>
+<td>-1720711191</td>
+<td>com.nocommercedemo.Testcases.CheckoutBillingPageTest@7674f035</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.MyAcoountPageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.MyAcoountPageTest</td>
+<td></td>
+<td>-1720711220</td>
+<td>com.nocommercedemo.Testcases.MyAcoountPageTest@248e319b</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.ShopingCartPageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.ShopingCartPageTest</td>
+<td></td>
+<td>-1720711213</td>
+<td>com.nocommercedemo.Testcases.ShopingCartPageTest@76b1e9b8</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.DeskTopPageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.DeskTopPageTest</td>
+<td></td>
+<td>-1720711177</td>
+<td>com.nocommercedemo.Testcases.DeskTopPageTest@2e8c1c9b</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.MyAcoountPageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.MyAcoountPageTest</td>
+<td></td>
+<td>-1720711221</td>
+<td>com.nocommercedemo.Testcases.MyAcoountPageTest@248e319b</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.RegisterPageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.RegisterPageTest</td>
+<td></td>
+<td>-1720711187</td>
+<td>com.nocommercedemo.Testcases.RegisterPageTest@8f2ef19</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.HomePageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.HomePageTest</td>
+<td></td>
+<td>-1720711179</td>
+<td>com.nocommercedemo.Testcases.HomePageTest@4b741d6d</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.CheckoutBillingPageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.CheckoutBillingPageTest</td>
+<td></td>
+<td>-1720711191</td>
+<td>com.nocommercedemo.Testcases.CheckoutBillingPageTest@7674f035</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.DeskTopPageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.DeskTopPageTest</td>
+<td></td>
+<td>-1720711177</td>
+<td>com.nocommercedemo.Testcases.DeskTopPageTest@2e8c1c9b</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.WishlistPageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.WishlistPageTest</td>
+<td></td>
+<td>-1720711207</td>
+<td>com.nocommercedemo.Testcases.WishlistPageTest@74ea2410</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.WishlistPageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.WishlistPageTest</td>
+<td></td>
+<td>-1720711207</td>
+<td>com.nocommercedemo.Testcases.WishlistPageTest@74ea2410</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.DeskTopPageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.DeskTopPageTest</td>
+<td></td>
+<td>-1720711177</td>
+<td>com.nocommercedemo.Testcases.DeskTopPageTest@2e8c1c9b</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.RegisterPageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.RegisterPageTest</td>
+<td></td>
+<td>-1720711187</td>
+<td>com.nocommercedemo.Testcases.RegisterPageTest@8f2ef19</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.CheckoutShippingMethodPageTest.tearDown()'><b>tearDown</b><br>Test class: com.nocommercedemo.Testcases.CheckoutShippingMethodPageTest</td>
+<td></td>
+<td>-1720711205</td>
+<td>com.nocommercedemo.Testcases.CheckoutShippingMethodPageTest@25ce9dc4</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.RegisterPageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.RegisterPageTest</td>
+<td></td>
+<td>-1720711187</td>
+<td>com.nocommercedemo.Testcases.RegisterPageTest@8f2ef19</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.MyAcoountPageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.MyAcoountPageTest</td>
+<td></td>
+<td>-1720711221</td>
+<td>com.nocommercedemo.Testcases.MyAcoountPageTest@248e319b</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.LoginPageTest.setup()'><b>setup</b><br>Test class: com.nocommercedemo.Testcases.LoginPageTest</td>
+<td></td>
+<td>-1720711217</td>
+<td>com.nocommercedemo.Testcases.LoginPageTest@2af004b</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.CheckoutPaymentmethodPageTest.verifypaymentmethodpage()'><b>verifypaymentmethodpage</b><br>Test class: com.nocommercedemo.Testcases.CheckoutPaymentmethodPageTest</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b58682be318c354356dffd8108d45028, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55055}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b58682be318c354356dffd8108d45028
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1034)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:102)
+	at com.nocommercedemo.Testcases.CheckoutPaymentmethodPageTest.setup(CheckoutPaymentmethodPageTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace650621382", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace650621382'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b58682be318c354356dffd8108d45028, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55055}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b58682be318c354356dffd8108d45028
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1034)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:102)
+	at com.nocommercedemo.Testcases.CheckoutPaymentmethodPageTest.setup(CheckoutPaymentmethodPageTest.java:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.CheckoutPaymentmethodPageTest@69e153c5</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.ComputerPageTest.computerpageTitle()'><b>computerpageTitle</b><br>Test class: com.nocommercedemo.Testcases.ComputerPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.ComputerPageTest.setup(ComputerPageTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace645190902", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace645190902'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.ComputerPageTest.setup(ComputerPageTest.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.ComputerPageTest@173ed316</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.RegisterPageTest.createAccountTest()'><b>createAccountTest</b><br>Test class: com.nocommercedemo.Testcases.RegisterPageTest<br>Parameters: Male, Rohit, Sharma, 5, 6, 1993, rohit@gmail.com, xyz pvt ltd, 232323, 232323</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.RegisterPageTest.setup(RegisterPageTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1620368915", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1620368915'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.RegisterPageTest.setup(RegisterPageTest.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.RegisterPageTest@8f2ef19</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.CheckoutShippingMethodPageTest.verifyshippingmethodpage()'><b>verifyshippingmethodpage</b><br>Test class: com.nocommercedemo.Testcases.CheckoutShippingMethodPageTest<br>Parameters: sanvi, Negi, sanvi@Negi, abc pvt ltd, punjab, jaipur, 3456, 345677</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.CheckoutShippingMethodPageTest.setup(CheckoutShippingMethodPageTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace917331754", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace917331754'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.CheckoutShippingMethodPageTest.setup(CheckoutShippingMethodPageTest.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.CheckoutShippingMethodPageTest@25ce9dc4</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.RegisterPageTest.createAccountTest()'><b>createAccountTest</b><br>Test class: com.nocommercedemo.Testcases.RegisterPageTest<br>Parameters: female, Rashi, Thakur, 4, 4, 1992, Rashi@gmail.com, abc pvt ltd, 565656, 565656</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.RegisterPageTest.setup(RegisterPageTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1871838170", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1871838170'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.RegisterPageTest.setup(RegisterPageTest.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.RegisterPageTest@8f2ef19</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.DeskTopPageTest.selectcputype()'><b>selectcputype</b><br>Test class: com.nocommercedemo.Testcases.DeskTopPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.DeskTopPageTest.setup(DeskTopPageTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1235155342", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1235155342'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.DeskTopPageTest.setup(DeskTopPageTest.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.DeskTopPageTest@2e8c1c9b</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.MyAcoountPageTest.myaccount()'><b>myaccount</b><br>Test class: com.nocommercedemo.Testcases.MyAcoountPageTest<br>Parameters: aarohi, sahu, aarohisahu@gmail.com, abc pvt ltd, Mumbai, ahmedabad, 1234, 23445</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.MyAcoountPageTest.setup(MyAcoountPageTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace816784381", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace816784381'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.MyAcoountPageTest.setup(MyAcoountPageTest.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.MyAcoountPageTest@248e319b</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.ComputerPageTest.computeritems()'><b>computeritems</b><br>Test class: com.nocommercedemo.Testcases.ComputerPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.ComputerPageTest.setup(ComputerPageTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2061865206", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2061865206'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.ComputerPageTest.setup(ComputerPageTest.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.ComputerPageTest@173ed316</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.HomePageTest.homepageallfunctions()'><b>homepageallfunctions</b><br>Test class: com.nocommercedemo.Testcases.HomePageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.HomePageTest.setup(HomePageTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace848961421", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace848961421'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.HomePageTest.setup(HomePageTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.HomePageTest@4b741d6d</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.LoginPageTest.logintitlepage()'><b>logintitlepage</b><br>Test class: com.nocommercedemo.Testcases.LoginPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.LoginPageTest.setup(LoginPageTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1472057002", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1472057002'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.LoginPageTest.setup(LoginPageTest.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.LoginPageTest@2af004b</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.CheckoutBillingPageTest.verifybillingpage()'><b>verifybillingpage</b><br>Test class: com.nocommercedemo.Testcases.CheckoutBillingPageTest<br>Parameters: sanvi, Negi, sanvi@Negi, abc pvt ltd, punjab, jaipur, 3456, 345677</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.CheckoutBillingPageTest.setup(CheckoutBillingPageTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace540962910", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace540962910'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.CheckoutBillingPageTest.setup(CheckoutBillingPageTest.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.CheckoutBillingPageTest@7674f035</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.WishlistPageTest.wishlisttable()'><b>wishlisttable</b><br>Test class: com.nocommercedemo.Testcases.WishlistPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.WishlistPageTest.setup(WishlistPageTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace426792528", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace426792528'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.WishlistPageTest.setup(WishlistPageTest.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.WishlistPageTest@74ea2410</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.DeskTopPageTest.desktoppageTitle()'><b>desktoppageTitle</b><br>Test class: com.nocommercedemo.Testcases.DeskTopPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.DeskTopPageTest.setup(DeskTopPageTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2071364564", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2071364564'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.DeskTopPageTest.setup(DeskTopPageTest.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.DeskTopPageTest@2e8c1c9b</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.ProductInfoPageTest.addwishandcomparelist()'><b>addwishandcomparelist</b><br>Test class: com.nocommercedemo.Testcases.ProductInfoPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.ProductInfoPageTest.setup(ProductInfoPageTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1758876146", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1758876146'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.ProductInfoPageTest.setup(ProductInfoPageTest.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.ProductInfoPageTest@2eae8e6e</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.OrderConfirmPageTest.verifyConfirmOdrerpage()'><b>verifyConfirmOdrerpage</b><br>Test class: com.nocommercedemo.Testcases.OrderConfirmPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.OrderConfirmPageTest.setup(OrderConfirmPageTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace934352027", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace934352027'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.OrderConfirmPageTest.setup(OrderConfirmPageTest.java:34)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.OrderConfirmPageTest@17f62e33</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.MyAcoountPageTest.myaccountpageTitle()'><b>myaccountpageTitle</b><br>Test class: com.nocommercedemo.Testcases.MyAcoountPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.MyAcoountPageTest.setup(MyAcoountPageTest.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace889260651", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace889260651'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.MyAcoountPageTest.setup(MyAcoountPageTest.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.MyAcoountPageTest@248e319b</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.LoginPageTest.loginpage()'><b>loginpage</b><br>Test class: com.nocommercedemo.Testcases.LoginPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.LoginPageTest.setup(LoginPageTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace190704044", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace190704044'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.LoginPageTest.setup(LoginPageTest.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.LoginPageTest@2af004b</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.ShopingCartPageTest.CartpageTitle()'><b>CartpageTitle</b><br>Test class: com.nocommercedemo.Testcases.ShopingCartPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.ShopingCartPageTest.setup(ShopingCartPageTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1521891844", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1521891844'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.ShopingCartPageTest.setup(ShopingCartPageTest.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.ShopingCartPageTest@76b1e9b8</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.WishlistPageTest.wishlistpagepageTitle()'><b>wishlistpagepageTitle</b><br>Test class: com.nocommercedemo.Testcases.WishlistPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.WishlistPageTest.setup(WishlistPageTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace908744222", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace908744222'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.WishlistPageTest.setup(WishlistPageTest.java:23)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.WishlistPageTest@74ea2410</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.CheckoutBillingPageTest.verifytitleofbillingpage()'><b>verifytitleofbillingpage</b><br>Test class: com.nocommercedemo.Testcases.CheckoutBillingPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.CheckoutBillingPageTest.setup(CheckoutBillingPageTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1466148437", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1466148437'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.CheckoutBillingPageTest.setup(CheckoutBillingPageTest.java:26)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.CheckoutBillingPageTest@7674f035</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.CheckoutCardtypemethodpageTest.verifycardmethodmethodpage()'><b>verifycardmethodmethodpage</b><br>Test class: com.nocommercedemo.Testcases.CheckoutCardtypemethodpageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.CheckoutCardtypemethodpageTest.setup(CheckoutCardtypemethodpageTest.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace668568559", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace668568559'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.CheckoutCardtypemethodpageTest.setup(CheckoutCardtypemethodpageTest.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.CheckoutCardtypemethodpageTest@27406a17</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.HomePageTest.homepagepageTitle()'><b>homepagepageTitle</b><br>Test class: com.nocommercedemo.Testcases.HomePageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.HomePageTest.setup(HomePageTest.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1241395522", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1241395522'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.HomePageTest.setup(HomePageTest.java:20)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.HomePageTest@4b741d6d</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.RegisterPageTest.Registertitlepage()'><b>Registertitlepage</b><br>Test class: com.nocommercedemo.Testcases.RegisterPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.RegisterPageTest.setup(RegisterPageTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1825984232", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1825984232'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.RegisterPageTest.setup(RegisterPageTest.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.RegisterPageTest@8f2ef19</td></tr>
+<tr>
+<td title='com.nocommercedemo.Testcases.ShopingCartPageTest.verifyAddtocart()'><b>verifyAddtocart</b><br>Test class: com.nocommercedemo.Testcases.ShopingCartPageTest</td>
+<td><div><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.ShopingCartPageTest.setup(ShopingCartPageTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1105778967", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1105778967'><pre>java.lang.NullPointerException
+	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
+	at java.base/java.util.ImmutableCollections$Map1.&lt;init&gt;(ImmutableCollections.java:1105)
+	at java.base/java.util.Map.of(Map.java:1353)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:180)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at com.nocommercedemo.Base.Baseclass.launchApp(Baseclass.java:108)
+	at com.nocommercedemo.Testcases.ShopingCartPageTest.setup(ShopingCartPageTest.java:24)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.nocommercedemo.Testcases.ShopingCartPageTest@76b1e9b8</td></tr>
+</table><p>
+</body>
+</html>
